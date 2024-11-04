@@ -17,15 +17,15 @@
 > Install Dependencies: pip install python-dotenv
 > Configure Environment Variables:
 > Create a .env file with the following details: 
-AI_SERVICE_ENDPOINT=your_azure_endpoint
-AI_SERVICE_KEY=your_azure_key
+> AI_SERVICE_ENDPOINT=your_azure_endpoint
+> AI_SERVICE_KEY=your_azure_key
 
 **Usage**
-Run the script by executing: python script_name.py
-Enter any text to detect its language. Type "quit" to exit.
+> Run the script by executing: python script_name.py
+> Enter any text to detect its language. Type "quit" to exit.
 
 **Sample Output**
-For example, entering "Bonjour" will produce output similar to:
+> For example, entering "Bonjour" will produce output similar to:
 {
   "documents": [
     {
@@ -38,39 +38,39 @@ For example, entering "Bonjour" will produce output similar to:
     }
   ]
 }
-Language: French
+> Language: French
 
 **Error Handling**
-Typical issues include:
-Authentication Errors: Caused by an invalid API key.
-Endpoint Errors: Result from an incorrect endpoint.
+> Typical issues include:
+> Authentication Errors: Caused by an invalid API key.
+> Endpoint Errors: Result from an incorrect endpoint.
 
 
-2. Language Detection Using Azure Text Analytics Client SDK
-This project enhances the previous one by using the Azure Text Analytics Client SDK for streamlined language detection.
+**2. Language Detection Using Azure Text Analytics Client SDK**
+> This project enhances the previous one by using the Azure Text Analytics Client SDK for streamlined language detection.
 
-Project Overview
-Using Python and the TextAnalyticsClient from Azure, this script allows users to input text, processes it through the Text Analytics service, and returns the detected language. This project is designed to further explore Azure’s cloud-based AI/ML services.
+**Project Overview**
+> Using Python and the TextAnalyticsClient from Azure, this script allows users to input text, processes it through the Text Analytics service, and returns the detected language. This project is designed to further explore Azure’s cloud-based AI/ML services.
 
-Requirements
-Python Version: 3.x
-Libraries: dotenv, azure-ai-textanalytics
-Azure Service: Requires endpoint URL and API key for the Text Analytics API.
+**Requirements**
+> Python Version: 3.x
+> Libraries: dotenv, azure-ai-textanalytics
+> Azure Service: Requires endpoint URL and API key for the Text Analytics API.
 
-Setup Instructions
-Clone the Repository: git clone https://github.com/yourusername/Azure_AIML_Implementation.git
-Install Dependencies: pip install python-dotenv azure-ai-textanalytics
-Configure Environment Variables:
-In the project directory, create a .env file and add: 
-AI_SERVICE_ENDPOINT=your_azure_endpoint
-AI_SERVICE_KEY=your_azure_key
+**Setup Instructions**
+> Clone the Repository: git clone https://github.com/yourusername/Azure_AIML_Implementation.git
+> Install Dependencies: pip install python-dotenv azure-ai-textanalytics
+> Configure Environment Variables:
+> In the project directory, create a .env file and add: 
+> AI_SERVICE_ENDPOINT=your_azure_endpoint
+> AI_SERVICE_KEY=your_azure_key
+> Input any text to identify its language. Type "quit" to end the session.
 
-Input any text to identify its language. Type "quit" to end the session.
+**Sample Output**
+> Entering "Hola" might yield:
+> Language: Spanish
 
-Sample Output
-Entering "Hola" might yield:
-Language: Spanish
-Error Handling
-Common errors include:
-Authentication Issues: Caused by invalid API keys.
-Endpoint Errors: Occur if the endpoint URL is incorrect.
+**Error Handling**
+> Common errors include:
+> Authentication Issues: Caused by invalid API keys.
+> Endpoint Errors: Occur if the endpoint URL is incorrect.
