@@ -4,6 +4,7 @@
 
 ''' Add your  AI_SERVICE_ENDPOINT and  AI_SERVICE_KEY as global variable in another file '''
 #this is the rest_client.py file
+
 from dotenv import load_dotenv
 import os
 import http.client, base64, json, urllib
@@ -87,6 +88,7 @@ if _name_ == "_main_":
 
 
 #this one is the clientsdk.py
+
 from dotenv import load_dotenv
 import os
 from azure.core.credentials import AzureKeyCredential
