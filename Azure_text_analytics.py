@@ -1,5 +1,10 @@
-''' Add your  AI_SERVICE_ENDPOINT and  AI_SERVICE_KEY as global variable in another file '''
+#there should be a environment file which will contain key and the endpoints 
 
+
+
+
+''' Add your  AI_SERVICE_ENDPOINT and  AI_SERVICE_KEY as global variable in another file '''
+#this is the rest_client.py file
 from dotenv import load_dotenv
 import os
 import http.client, base64, json, urllib
