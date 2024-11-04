@@ -8,15 +8,15 @@
 > In this Python-based project, we use the Azure Text Analytics API to analyze user-input text and return the detected language. This beginner-friendly project highlights basic cloud integration in the AIML domain.
 
 **Requirements**
-Python Version: 3.x
-Libraries: dotenv, http.client, json
-Azure Service: Azure Text Analytics API, including an API endpoint and key.
+> Python Version: 3.x
+> Libraries: dotenv, http.client, json
+> Azure Service: Azure Text Analytics API, including an API endpoint and key.
 
 **Setup Instructions**
-Clone the Repository: git clone https://github.com/yourusername/Azure_AIML_Implementation.git
-Install Dependencies: pip install python-dotenv
-Configure Environment Variables:
-Create a .env file with the following details: 
+> Clone the Repository: git clone https://github.com/yourusername/Azure_AIML_Implementation.git
+> Install Dependencies: pip install python-dotenv
+> Configure Environment Variables:
+> Create a .env file with the following details: 
 AI_SERVICE_ENDPOINT=your_azure_endpoint
 AI_SERVICE_KEY=your_azure_key
 
