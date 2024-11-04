@@ -1,18 +1,18 @@
-# Azure AIML Implementation-
-Welcome to my AI/ML project repository! Here, I share a suite of projects focused on applying Azure’s powerful AI and ML tools for model development, deployment, and data management. This space is crafted to offer insights, tools, and resources dedicated to enhancing understanding and integration of AIML in the cloud.
+# Azure AIML Implementation
+> Welcome to my AI/ML project repository! Here, I share a suite of projects focused on applying Azure’s powerful AI and ML tools for model development, deployment, and data management. This space is crafted to offer insights, tools, and resources dedicated to enhancing understanding and integration of AIML in the cloud.
 
-1. Language Detection Using Azure Text Analytics API
-This project serves as an introduction to AI/ML with Azure by leveraging the Text Analytics API to identify the language of user-provided text.
+**1. Language Detection Using Azure Text Analytics API**
+> This project serves as an introduction to AI/ML with Azure by leveraging the Text Analytics API to identify the language of user-provided text.
 
-Project Overview
-In this Python-based project, we use the Azure Text Analytics API to analyze user-input text and return the detected language. This beginner-friendly project highlights basic cloud integration in the AIML domain.
+**Project Overview**
+> In this Python-based project, we use the Azure Text Analytics API to analyze user-input text and return the detected language. This beginner-friendly project highlights basic cloud integration in the AIML domain.
 
-Requirements
+**Requirements**
 Python Version: 3.x
 Libraries: dotenv, http.client, json
 Azure Service: Azure Text Analytics API, including an API endpoint and key.
 
-Setup Instructions
+**Setup Instructions**
 Clone the Repository: git clone https://github.com/yourusername/Azure_AIML_Implementation.git
 Install Dependencies: pip install python-dotenv
 Configure Environment Variables:
@@ -20,11 +20,11 @@ Create a .env file with the following details:
 AI_SERVICE_ENDPOINT=your_azure_endpoint
 AI_SERVICE_KEY=your_azure_key
 
-Usage
+**Usage**
 Run the script by executing: python script_name.py
 Enter any text to detect its language. Type "quit" to exit.
 
-Sample Output
+**Sample Output**
 For example, entering "Bonjour" will produce output similar to:
 {
   "documents": [
@@ -40,7 +40,7 @@ For example, entering "Bonjour" will produce output similar to:
 }
 Language: French
 
-Error Handling
+**Error Handling**
 Typical issues include:
 Authentication Errors: Caused by an invalid API key.
 Endpoint Errors: Result from an incorrect endpoint.
