@@ -74,3 +74,45 @@
 > Common errors include:
 > Authentication Issues: Caused by invalid API keys.
 > Endpoint Errors: Occur if the endpoint URL is incorrect.
+
+
+# Background Removal and Image Analysis with Azure Computer Vision
+>  In this project, I explored Azure's Computer Vision service to analyze images and perform background removal or foreground extraction using Python. The project showcases how to leverage Azure’s Computer Vision API for practical applications, from feature detection to background removal.
+
+**Overview**
+> This Python script connects to Azure's Computer Vision API to:
+> Analyze an image to retrieve specific features such as captions, tags, and objects.
+> Perform background removal or create a foreground matte for image enhancement.
+> This project is part of an ongoing series aimed at exploring Azure AI/ML capabilities and integrating cloud-based computer vision.
+
+**Features**
+> Image Analysis: Retrieves captions, tags, objects, and people detection from an image.
+> Background Removal: Option to remove the background or isolate the foreground for visual clarity.
+
+**Requirements**
+> Python 3.x
+> Libraries: dotenv, Pillow (PIL), matplotlib, requests, azure.core.exceptions
+> Azure Computer Vision API: Requires an endpoint URL and API key from Azure.
+
+**Setup Instructions**
+> 1. Clone the repository:git clone https://github.com/Debiprasadsahoo874/Azure_AIML_Implementations.git
+cd Azure_AIML_Implementations
+> 2. Install Dependencies: pip install python-dotenv Pillow matplotlib requests azure-core
+> 3. Configure Environment Variables:
+> Create a .env file in the project directory and add your Azure API endpoint and key:
+> AI_SERVICE_ENDPOINT=your_azure_endpoint
+> AI_SERVICE_KEY=your_azure_key
+> 4. Add an Image: Place an image named street.jpg in an images folder, or provide the file path as a command-line argument when running the script.
+
+**Usage**
+> Run the script to analyze the image and optionally remove the background: python Background_removal_and_image_analysis.py
+> Alternatively, specify a different image file: python Background_removal_and_image_analysis.py images/your_image.jpg
+
+**Sample Output**
+> Analyzed Image Features: The script outputs captions, dense captions, tags, detected objects, and people.
+> Background Removal: Saves an image with the background removed or the foreground isolated.
+
+**Error Handling**
+> Common errors include:
+> Authentication Error: Check your API key.
+> HTTP Response Error: Verify image format and endpoint configurations.
