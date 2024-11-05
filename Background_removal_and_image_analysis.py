@@ -1,6 +1,7 @@
 ''' Make two global variable as AI_SERVICE_ENDPOINT and AI_SERVICE_KEY and store your endpoint and key inside that '''
 
-from dotenv import load_dotenv
+
+ from dotenv import load_dotenv
 import os
 from PIL import Image, ImageDraw
 import sys
@@ -170,5 +171,5 @@ def BackgroundForeground(endpoint, key, image_file):
 
     print('  Results saved in background.png \n')
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
