@@ -1,4 +1,4 @@
-'''Add your own 
+'''Add your own AI_SERVICE_ENDPOINT and AI_SERVICE_KEY in a global variable.'''
 
 from dotenv import load_dotenv
 import os
