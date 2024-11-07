@@ -135,4 +135,25 @@ cd Azure_AIML_Implementations
 > Azure AI Vision API: Requires an endpoint URL and API key for access
 
 **Setup**
-> Clone the Repository: 
+> 1. Clone the Repository: https://github.com/Debiprasadsahoo874/Azure_AIML_Implementations/blob/main/Image_text_detector.py
+> 2. Install Dependencies: pip install python-dotenv requests azure-core
+> 3. Configure Environment Variables- Create a .env file in the project directory with the following contents:
+>    AI_SERVICE_ENDPOINT=your_azure_endpoint
+>    AI_SERVICE_KEY=your_azure_key
+> 4. Add an Image File: Place an image with text in the images folder, or specify the path to a different image file for processing.
+
+**Usage**
+> Run the Script: python text_reader.py
+> Specify a Different Image File: python text_reader.py images/your_image.jpg
+
+**Sample Output**
+> Console Output: The extracted text is displayed in the console.
+> File Output: The text is saved as a .txt file in the project directory.
+> Bounding Polygon Visualization: The processed image, with highlighted bounding boxes around detected text, is saved as text.jpg.
+
+**Error Handling**
+> Authentication Errors: Ensure the API key is valid and properly configured in the .env file.
+> HTTP Response Errors: Check for supported image formats and verify the endpoint configurations.
+
+**License**
+> This project is open-sourced under the MIT License.
