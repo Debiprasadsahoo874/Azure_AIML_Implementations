@@ -116,3 +116,23 @@ cd Azure_AIML_Implementations
 > Common errors include:
 > Authentication Error: Check your API key.
 > HTTP Response Error: Verify image format and endpoint configurations.
+
+
+# Azure AI Vision Text Reader
+> This project uses the Azure AI Vision SDK to read text from images, including options for printed and handwritten text. It demonstrates setting up an Azure Vision client to analyze images, extract text, and highlight detected text directly on the image.
+
+**Features**
+> Text Extraction: Leverages the Azure AI Vision SDK to detect and read text from images, supporting both printed and handwritten text.
+> Bounding Polygon Visualization: Highlights text and bounding polygons around each detected word or line within the image.
+> User Options: A menu-driven interface allows users to select different images for analysis.
+
+**Overview**
+> This project showcases Azure's AI and machine learning capabilities for Optical Character Recognition (OCR), enabling cloud-based text extraction, even for Indian languages.
+
+**Requirements**
+> Python 3.x
+> Libraries: dotenv, requests, azure.core.exceptions
+> Azure AI Vision API: Requires an endpoint URL and API key for access
+
+**Setup**
+> Clone the Repository: 
