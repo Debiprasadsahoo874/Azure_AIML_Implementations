@@ -67,4 +67,26 @@ def GetTextRead(image_file):
             drawLinePolygon = True
 
             r = line.bounding_polygon
-            bounding_polygon = ((r[0].x, r[0].y), (r[1].x,
+             bounding_polygon = ((r[0].x, r[0].y), (r[1].x, r[1].y), (r[2].x, r[2].y), (r[3].x, r[3].y))
+            
+            # Return the position bounding box around each line
+            print("   Bounding Polygon: {}".format(bounding_polygon))
+            
+            # Return each word detected in the image and the position bounding box around each word with confidence level
+            for word in line.words:
+                r = word.bounding_polygon
+                bounding_polygon = ((r[0].x, r[0].y), (r[1].x, r[1].y), (r[2].x, r[2].y), (r[3].x, r[3].y))
+                print(f"    Word: '{word.text}', Bounding Polygon: {bounding_polygon}, Confidence: {word.confidence:.4f}")
+                
+                # Draw word bounding polygon
+                draw.polygon(bounding_polygon, outline=color, width=3)
+        
+        # Display and save image
+        plt.imshow(image)
+        plt.tight_layout(pad=0)
+        outputfile = 'text.jpg'
+        fig.savefig(outputfile)
+        print('\n  Results saved in', outputfile)
+
+if __name__ == "__main__":
+    main()
